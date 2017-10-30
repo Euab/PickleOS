@@ -10,7 +10,8 @@ If you wish to contribute you should at least have basic knowledge of C, C++, As
 
 ## Dependencies
 If it was ready (which it isn't...) and you wanted to get it. There would be no dependencies becuase it would all be in the ISO file. But, if you want to download the source and work on it. You will need the following packages:
-```$ sudo apt-get install \
+```
+$ sudo apt-get install \
     xorriso \
     grub-legacy \
     g++ \
