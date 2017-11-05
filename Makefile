@@ -21,13 +21,7 @@ kernel.iso: kernel.iso
 	mkdir iso/boot
 	mkdir iso/boot/grub
 	cp kernel.bin iso/boot/kernel.bin
-	echo 'set timeout=0' > iso/boot/grub/grub.cfg
-	echo 'set default=0' >> iso/boot/grub/grub.cfg
-	echo '' >> iso/boot/grub/grub.cfg
-	echo 'menuentry "R" {' >> iso/boot/grub/grub.cfg
-	echo '  multiboot /boot/kernel.bin' >> iso/boot/grub/grub.cfg
-	echo '  boot' >> iso/boot/grub/grub.cfg
-	echo '}'
+	echo 'menuentry "PickleOS" {multiboot /boot/kernel.bin}' >> iso/boot/grub/grub.cfg
 	grub-mkrescue --output=kernel.iso iso
 	rm -rf iso
 
